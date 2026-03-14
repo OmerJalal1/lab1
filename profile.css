@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    background-color: lightgray;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Element-type selector */
+p {
+    color: rgb(74, 112, 13);
+}
+
+/* ID selector */
+#main-title {
+    font-size: 2em;
+}
+
+/* Class selector */
+.highlight {
+    background-color: rgb(243, 66, 95);
+}
+
+/* Descendant selector */
+ul li {
+    list-style-type: square;
+}
+
+/* Attribute selector */
+a[href*="chess.com"] {
+    color: green;
+}
+
+/* Pseudo-class selector */
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+

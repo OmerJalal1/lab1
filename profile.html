@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>OmerJalal's profile</title>
+        <link rel="stylesheet" href="profile.css">
+    </head>
+    <body>
+        <h1 id="main-title">Name: OmerJalal </h1>
+        <h2>WA training</h2>
+        
+        <p>I am currently a student in the <strong>WA training</strong> program, where I am 
+        learning the fundamentals of web development. It has been an <em>exciting</em>
+        journey so far, and I look forward to building more complex projects as I 
+        refine my coding skills.</p>
+
+        <img src="bird.jpg" alt="a photo of a bird"> <br>
+        <a href="https://www.chess.com/home" target="_blank">Play Chess</a>
+        <ul>
+            <li class="highlight">playing chess</li>
+            <li class="highlight">playing valorant</li>
+            <li>prompting to AI</li>
+        </ul>
+        <ol>
+            <li>fav TV series: succession</li>
+           <li>fav course: Database</li> 
+           <li>fav movie: The departed</li>
+        </ol>
+        <table border="1">
+            <tr>
+                <th>counrty</th>
+                <th>population</th>
+            </tr>
+            <tr>
+                <td>IRAQ</td>
+                <td>34M</td>
+            </tr>
+            <tr>
+                <td>IRAN</td>
+                <td>29M</td>
+            </tr>
+            <tr>
+                <td>CHINA</td>
+                <td>1.9B</td>
+            </tr>
+        </table>
+          <form action="/submit" method="post">
+            <label for="name">Visitor's Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="choice">Choose an option:</label>
+            <select id="choice" name="choice">
+                <option value="chess">Play Chess</option>
+                <option value="valorant">Play Valorant</option>
+                <option value="ai">Prompt to AI</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
