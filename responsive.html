@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page Example</title>
+  <style>
+    /* Basic page style */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f1f1f1;
+      color: #111;
+    }
+
+    header {
+      background: #005a9c;
+      color: white;
+      padding: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    /* layout */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: 1rem;
+    }
+
+    .main {
+      background: white;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+
+    .sidebar {
+      background: #fafafa;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+
+    /* flexbox cards */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+    }
+
+    /* grid layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .grid-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+    }
+
+    /* media queries */
+    @media (max-width: 600px) {
+      body {
+        background: #fff7e6;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .sidebar {
+        display: none;
+      }
+
+      .cards {
+        justify-content: stretch;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Page</h1>
+  </header>
+
+  <div class="container">
+    <div class="layout">
+      <main class="main">
+        <section>
+          <h2>Flexbox cards</h2>
+          <p>These are simple cards inside a flex container. They wrap when the screen gets smaller.</p>
+
+          <div class="cards">
+            <div class="card">
+              <h3>Card 1</h3>
+              <p>Content in card 1.</p>
+            </div>
+            <div class="card">
+              <h3>Card 2</h3>
+              <p>Content in card 2.</p>
+            </div>
+            <div class="card">
+              <h3>Card 3</h3>
+              <p>Content in card 3.</p>
+            </div>
+            <div class="card">
+              <h3>Card 4</h3>
+              <p>Content in card 4.</p>
+            </div>
+            <div class="card">
+              <h3>Card 5</h3>
+              <p>Content in card 5.</p>
+            </div>
+            <div class="card">
+              <h3>Card 6</h3>
+              <p>Content in card 6.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Grid layout</h2>
+          <p>This grid has 3 columns on wide screens and becomes 1 column on small screens.</p>
+
+          <div class="grid">
+            <div class="grid-item">
+              <h3>Item A</h3>
+              <p>Grid item A.</p>
+            </div>
+            <div class="grid-item">
+              <h3>Item B</h3>
+              <p>Grid item B.</p>
+            </div>
+            <div class="grid-item">
+              <h3>Item C</h3>
+              <p>Grid item C.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <p>This sidebar disappears when the viewport is less than 400px wide.</p>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
